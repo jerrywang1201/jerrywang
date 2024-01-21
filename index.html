@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry Wang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #ffffff; /* White background for container */
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header h1, .header h2, .header h3, .profile-description p, .footer {
+            color: #000000; /* Black text for all headers, paragraphs, and footer */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header h1 {
+            font-size: 1.2em;
+        }
+
+        .header h2, .header h3 {
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+
+        .profile-image {
+            flex: 0 0 200px;
+            height: 220px;
+            margin-right: 20px;
+            width: 100%;
+        }
+
+        .profile-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .profile-description {
+            flex: 1;
+            text-align: left;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000000; /* Black text for social links */
+        }
+
+        .news-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .news-section li {
+            margin-bottom: 15px; /* 增加列表项之间的间距 */
+            font-size: 1em;
+        }
+
+        .profile-description, .news-section {
+            font-size: 1.3em; /* 增加字体大小 */
+        }
+
+        .news-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .news-section li {
+            display: flex; /* 使用Flexbox布局 */
+            margin-bottom: 15px; /* 新闻条目之间的间距 */
+        }
+        
+        .news-date {
+            flex-basis: 100px; /* 为日期分配固定宽度 */
+            flex-shrink: 0; /* 防止日期部分收缩 */
+            font-weight: bold; /* 日期文字加粗 */
+            margin-right: 10px; /* 日期和内容之间的间距 */
+        }
+
+        .news-content {
+            flex-grow: 1; /* 新闻内容占据剩余空间 */
+        }
+
+
+        .social-links i {
+            margin-right: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffffff; /* White background for footer */
+            color: #000000; /* Black text for footer */
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-info">
+                <h1>Jerry(Jialong) Wang</h1>
+                <h2>Honours B.A.Sc Electrical and Electronic Engineering @ <a href="https://www.uottawa.ca/faculty-engineering/undergraduate-studies/programs/electrical-engineering" target="_blank">University of Ottawa</a></h2>
+                <h2>Undergraduate Research Assistant @ <a href="https://uniweb.uottawa.ca/members/4953/profile" target="_blank">uOttawa Faculty of Engineering</a></h2>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="images/jialong.jpg" alt="Jerry Wang">
+            </div>
+            <div class="profile-description">
+                <p>Research Interest focuses on IoT sensor design and data analysis, and has a strong background in embedded systems and wireless communication technology. I am good at developing microcontroller drivers using C++ and RTOS. I have in-depth research on environmental monitoring and data processing technology. I also have practical experience in mobile application development and data automation.</p>
+                <!-- Add your self-introduction here -->
+            </div>
+        </div>
+        <div class="social-links">
+            <!-- Social links with icons -->
+            <a href="mailto:jwang623@uottawa.ca"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/jw1201"><i class="fab fa-linkedin"></i></a>
+            <a href="https://p9ydnf8c74.wixsite.com/my-site-4"><i class="fas fa-globe"></i></a>
+            <a href="https://drive.google.com/file/d/1in_1kjdePyvClQm07rHqX-ahEmKjUoV0/view?usp=sharing"><i class="fa-solid fa-folder"></i></a>
+        </div>
+        <div class="news-section">
+            <h2>News</h2>
+            <ul>
+                <li>
+                    <div class="news-date">10/2023</div>
+                    <div class="news-content">My submission was accepted into <a href="https://ceea.ca/conference/conference-2024/" target="_blank">CEEA 2024</a>! I look forward to attending the conference and presenting my research.</div>
+                </li>
+                <li>
+                    <div class="news-date">9/2022</div>
+                    <div class="news-content">Successfully completed my internship at Apple, where I designed, built and deployed a dual channel battery tester and new testing data uploading method.</div>
+                </li>
+            </ul>
+        </div>
+        
+        
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Jerry Wang. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

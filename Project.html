@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry Wang's Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* 现有的CSS代码保持不变 */
+
+        /* 项目部分的样式 */
+        .projects-container h2 {
+            font-size: 2.5em; /* 或者使用您想要的具体像素值，比如 '24px' */
+            margin-bottom: 1em; /* 根据需要调整标题下方的间距 */
+        }
+
+    
+
+        .project-description h3 {
+            font-size: 1.5em; /* 或者您可以使用px, pt, % 等单位 */
+            margin: 0 0 10px 0; /* 调整上下左右的间距 */
+        }
+
+        
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .project {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .project-description {
+            flex-basis: 50%;
+        }
+
+        .project-image {
+            flex-basis: 50%;
+            text-align: center;
+        }
+
+        .project-image img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* 响应式布局：在较小屏幕上堆叠布局 */
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+            }
+
+            .project-description, .project-image {
+                flex-basis: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 其他部分的HTML代码保持不变 -->
+
+        <!-- 项目展示部分 -->
+        <div class="projects-container">
+            <h2>Projects</h2>
+            
+            <!-- 项目 1 -->
+            <div class="project">
+                <div class="project-description">
+                    <h3>Mix Cell Tester: (Software, Hands-On Electrical, 3D CAD)</h3>
+                    <p>Replication for the design and production of battery test equipment. From the perspective of Test Design Lead, I participated in the internal circuit design from PoC, and the lead team carried out EVT and DVT. In the end, this project helped Apple replace expensive, single-function testing equipment, which helped the team save a total of about $450,000 in expenses and increased testing efficiency by 13%, and the success rate of data uploads increased by 13%.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/mixtester.jpg" alt="Mix Cell Tester">
+                </div>
+            </div>
+
+            <!-- 重复以上结构以添加更多项目 -->
+
+            <!-- 项目 5 -->
+            <div class="project">
+                <div class="project-description">
+                    <h3>Snow Heating Pad: (Software, Hands-On Electrical, 3D CAD)</h3>
+                    <p>Ottawa is most affected by the snow is the school's students and staff. They needed a controllable heating mat that could melt snow by using internal heaters to increase the surface temperature of the mat. The device is very easy to disassemble, with a built-in Bluetooth sensor and temperature sensor, users can remotely control the heating pad to fully utilize its functions and save power. Often the most effective way to solve a problem is to take inspiration from what works. The proposed device is designed as a modular tile to provide selective and adaptive heat.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/snowpad.jpg" alt="Snow Heating Pad">
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他部分的HTML代码保持不变 -->
+    </div>
+</body>
+</html>
